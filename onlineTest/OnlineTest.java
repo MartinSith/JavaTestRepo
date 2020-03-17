@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class OnlineTest extends JFrame implements ActionListener
+class OnlineNewTest extends JFrame implements
 {
 	JLabel l;
 	JRadioButton jb[]=new JRadioButton[5];
@@ -12,7 +12,7 @@ class OnlineTest extends JFrame implements ActionListener
 	ButtonGroup bg;
 	int count=0,current=0,x=1,y=1,now=0;
 	int m[]=new int[10];	
-	OnlineTest(String s)
+	OnlineTest(String s) /*some comment*/
 	{
 		super(s);
 		l=new JLabel();
