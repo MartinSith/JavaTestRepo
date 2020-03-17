@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class OnlineNewTest extends JFrame implements
+class OnlineNewTest extends JFrame implements Javascript
 {
 	JLabel l;
 	JRadioButton jb[]=new JRadioButton[5];
@@ -12,11 +12,11 @@ class OnlineNewTest extends JFrame implements
 	ButtonGroup bg;
 	int count=0,current=0,x=1,y=1,now=0;
 	int m[]=new int[10];	
-	OnlineTest(String s) /*some comment*/
+	OnlineTest(String s)
 	{
 		super(s);
 		l=new JLabel();
-		add(l);
+		add(l); /*some comment*/
 		bg=new ButtonGroup();
 		for(int i=0;i<5;i++)
 		{
@@ -25,7 +25,7 @@ class OnlineNewTest extends JFrame implements
 			bg.add(jb[i]);
 		}
 		b1=new JButton("Next");
-		b2=new JButton("Bookmark");
+		b2=new JButton("Book");
 		b1.addActionListener(this);
 		b2.addActionListener(this);
 		add(b1);add(b2);
